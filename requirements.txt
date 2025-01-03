@@ -2,3 +2,6 @@ customtkinter
 pyinstaller
 socketio
 flask
+flask-socketio
+python-socketio
+eventlet 
