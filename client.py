@@ -8,7 +8,7 @@ sio = socketio.Client()
 
 def connect_to_server():
     try:
-        sio.connect('https://99a6fb10-f9cf-4a43-a9a3-20f6890b9b6d-00-2k3c696iv73ye.spock.replit.dev/')  # Replace with your Replit URL
+        sio.connect('YOUR SERVER.PY IP AND PORT OR USE REPLIT URL')  # Replace with your Replit URL
         chat_window.insert(tk.END, "Connected to the server.\n")
     except Exception as e:
         chat_window.insert(tk.END, f"Error connecting to server: {e}\n")
@@ -65,7 +65,7 @@ ctk.set_default_color_theme("blue")  # Themes: "blue" (default), "green", "dark-
 
 # Create the GUI
 root = ctk.CTk()
-root.title("3DS PRIVATE LINE")
+root.title("Simple Chat Rooms")
 root.geometry("600x500")
 
 # Frame to hold entry fields and buttons
@@ -95,7 +95,7 @@ join_button.grid(row=3, column=1, padx=5, pady=10)
 # Chat window to display messages
 chat_window = scrolledtext.ScrolledText(root, wrap="word", height=15, width=70)
 chat_window.pack(padx=10, pady=10, fill="both", expand=True)
-chat_window.insert(tk.END, "Welcome to 3DS PRIVATE LINE!\n")
+chat_window.insert(tk.END, "Welcome to Simple Chat Rooms!\n")
 
 # Add the message entry box
 message_entry = ctk.CTkEntry(root, placeholder_text="Type your message here...")
